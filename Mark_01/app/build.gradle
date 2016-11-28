@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "com.example.hp.mark_01"
+        minSdkVersion 22
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res', 'src/main/res/layout/fragment', 'src/main/res/layout/activity', 'src/main/res/adapter_item', 'src/main/res/layout/adapter_item', 'src/main/res/layout/unit', 'src/main/res/layout/text']
+        }
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    compile project(':library')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.bumptech.glide:volley-integration:1.4.0@aar'
+    compile 'com.j256.ormlite:ormlite-android:5.0'
+    compile 'com.android.support:palette-v7:24.1.1'
+    compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    compile 'com.melnykov:floatingactionbutton:1.3.0'
+    compile 'com.yanzhenjie:recyclerview-swipe:1.0.1'
+    compile 'com.android.support:support-v4:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile files('libs/AMap_Location_V2.8.0_20160811.jar')
+}

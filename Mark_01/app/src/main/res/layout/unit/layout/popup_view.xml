@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="#edeaea"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:elevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <include
+            android:id="@+id/dish"
+            layout="@layout/card_menu_item" />
+
+        <TextView
+            android:id="@+id/creat_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:text="2016-5-12" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp"
+            android:text="烟台" />
+
+        <EditText
+            android:focusable="true"
+            android:id="@+id/evaluate_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/dish"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

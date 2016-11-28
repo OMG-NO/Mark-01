@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/maincontent_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1"
+    tools:context="com.example.hp.mark_01.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/search_fram"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#01ffffff"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="@dimen/fragment_search_edit_width"
+            android:layout_height="@dimen/fragment_search_edit_height"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="168dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/search_content"
+                android:layout_width="280dp"
+                android:layout_height="@dimen/fragment_search_edit_height"
+                android:background="#eae6e6"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <ImageButton
+                android:id="@+id/search_food"
+                android:layout_width="60dp"
+                android:layout_height="@dimen/fragment_search_edit_height"
+                android:background="#f1dabf37"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/search_food" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <include layout="@layout/weather_page" />
+</RelativeLayout>

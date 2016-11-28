@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_sidebar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fragment_Search_bg"
+    tools:context="com.example.hp.mark_01.MainActivity">
+
+    <fragment
+        android:id="@+id/sidefragment"
+        android:name="com.example.hp.mark_01.Fragment.MainSide_Fragment"
+        android:layout_width="80dp"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/maincontent"
+        android:name="com.example.hp.mark_01.Fragment.MainContent_Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></fragment>
+</android.support.v4.widget.SlidingPaneLayout>

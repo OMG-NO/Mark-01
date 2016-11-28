@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffcc80</color>
+    <color name="colorPrimaryDark">#e65100</color>
+    <color name="colorAccent">#e84e40</color>
+
+    <color name="Fragment_Search_bg">#fdd835</color>
+
+    <color name="purchase_menu_buy">#f5ad30</color>
+    <color name="purchase_menu_stress">#a2a3a4</color>
+    <color name="purchase_menu_delect">#e84e40</color>
+    <color name="purchase_menu_default">#00FF00</color>
+
+    <color name="Mainside_Covered">#6e6d6d</color>
+
+    <color name="popup_background">#dff1ecec</color>
+    
+    <color name="Edit_Opaque_background">#92848383</color>
+</resources>

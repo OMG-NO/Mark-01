@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/search"
+            style="@style/imgstyle"
+            android:src="@drawable/search"
+            android:layout_height="100dp" />
+        <ImageView
+            android:id="@+id/collection"
+            style="@style/imgstyle"
+            android:src="@drawable/collection"
+            android:layout_height="100dp" />
+        <ImageView
+            android:id="@+id/purchase"
+            style="@style/imgstyle"
+            android:src="@drawable/purchase"
+            android:layout_height="100dp" />
+    </LinearLayout>
+</RelativeLayout>

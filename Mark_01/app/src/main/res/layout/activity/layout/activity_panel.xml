@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/sidefragment"
+        android:name="com.example.hp.mark_01.Fragment.Fragment_SlidPanel"
+        android:layout_width="150dp"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:name="com.example.hp.mark_01.Fragment.Fragment_ContentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</android.support.v4.widget.SlidingPaneLayout>
